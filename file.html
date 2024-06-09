@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        .icons{
+            background-color: white;
+            color: white;
+        }
+        .navBarLinks{
+            cursor: pointer;
+            margin: 0px 30px;
+        }
+        .buyButton{
+            padding: 13px 25px;
+            font-size: 20px;
+            border-radius: 50px;
+            border: 0px;
+            cursor: pointer;
+        }
+        .whiteBgButton{
+            background-color: rgb(31, 31, 232);
+            color: white
+        }
+        .blackBgButton{
+            color: rgb(0, 136, 255);
+            background-color: transparent;
+            border-color: rgb(0, 136, 255);
+            border-style: groove;
+            border-width: 1px;
+        }
+        .blackBgButton:hover{
+            color: white;
+            background-color: rgb(31, 31, 232);
+            border-color: rgb(31, 31, 232);
+        }
+        .divMainTwo{
+            display: flex;
+            background-color: black;
+            color: black;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 0px 20px 0px;
+            color: white;
+            margin-bottom: 20px;
+            width: 50%;
+            margin: 5px 10px;
+        }
+        .divMainTwo img{
+            width: 80%;
+        }
+        .carasoulImage{
+            width: 80%;
+            margin-left: 2%;
+            margin-right: 2%;
+
+        }
+        .scrollDots{
+            height: 15px;
+            width: 15px;
+            background-color: gray;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 20px 10px ;
+            
+        }
+        .bottomLinksLast{
+            margin: 0px 5px;
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+            margin: 5px 0px;
+
+        }
+    </style>
+</head>
+<body style="margin: 0px;">
+    <!-- NavBar -->
+    <div style="
+            background-color: black;
+            color: white;
+            height: 50px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 0px ;
+            position: sticky;
+            top: 0px;
+            font-size: 20px;
+            align-items: center;
+            opacity: 0.85;">
+        <div class="navBarLinks">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-apple" viewBox="0 0 16 16">
+            <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+            <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/>
+            </svg>
+        </div>   
+        
+        <div class="navBarLinks">Store</div>
+        <div class="navBarLinks">Mac</div>
+        <div class="navBarLinks">ipad</div>
+        <div class="navBarLinks">iphone</div>
+        <div class="navBarLinks">watch</div>
+        <div class="navBarLinks">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+            </svg>
+        </div>
+        <div class="navBarLinks">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+            </svg>
+        </div>
+
+    </div>
+    
+    <!-- Bank Offer -->
+    <div style="
+            display: flex;
+            background-color: rgb(93, 83, 83);
+            color: rgb(178, 174, 174);
+            justify-content: center;
+            align-items: center;
+            height: 40px;">
+        <span>
+            No Cost EMI for 24 months on all iPhones and Macbooks.*Bank offer
+            <a style="color:blue" href="#">Buy Now</a>
+        </span>
+    </div>
+
+    <!-- Event -->
+    <div style="
+            display: flex;
+            flex: 1;
+            background-color: black;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+            align-items: center;
+            margin: 0px 0px 20px 0px;
+            padding: 0px 0px 30px 0px;
+            " >
+        
+        <img 
+            src="apple_videoframe_3938.png"/>
+        <img 
+            style="
+                margin-top:-80px;
+                width: 600px;
+                align-self: center;"   
+            src="WWDC24.png"/>
+        <span style="font-size: 36px;margin-top: 40px;">
+            Apple WorldWide Developer Conference
+        </span>
+        <span style="font-size: 32px;">
+            Join us online from 10 to 14 June
+        </span>
+        <button style="margin-top: 20px;" class="whiteBgButton buyButton">
+            Learn More
+        </button>
+    </div>
+
+    <!-- 15Pro -->
+    <div style="
+            display: flex;
+            background-color: black;
+            color: white;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            padding: 20px 0px 20px 0px;
+            ">
+
+        <span style="font-size: 46px;">iPhone 15 Pro</span>
+        <span style="font-size: 30px;">Titanium, So Strong, So light, So Pro</span>
+        
+        <div style="margin-top: 20px;"> 
+            <button class="whiteBgButton buyButton">
+                Learn More
+            </button>
+            <button class="blackBgButton buyButton">
+                Buy
+            </button>
+        </div>
+        
+        <img 
+            style="width: 80%; margin-top: 20px;"
+            src="Titanium.png" />
+    </div>
+
+    <!-- 15 -->
+    <div style="
+            display: flex;
+            background-color: #f3f3f5;
+            color: black;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 0px 20px 0px;
+            margin-bottom: 20px;
+            ">
+        <span style="font-size: 46px;">iPhone 15</span>
+        <span style="font-size: 30px;">Titanium, So Strong, So light, So Pro</span>
+        
+        <div style="margin-top: 20px;"> 
+            <button class="whiteBgButton buyButton">
+                Learn More
+            </button>
+            <button class="blackBgButton buyButton">
+                Buy
+            </button>
+        </div>
+        
+        <img 
+            style="width: 80%; margin-top: 20px;"
+            src="i15.png" />
+    </div>
+
+    <div style="
+            display: flex;
+            flex-direction: row;
+            justify-content:space-around;">
+
+        <!-- IPad Pro -->
+        <div class="divMainTwo" >
+            <span style="font-size: 46px;">iPad Pro</span>
+            <span style="font-size: 30px;">Unbelievely thin</span>
+            <div style="margin-top: 20px;margin-bottom: 30px;"> 
+                <button class="whiteBgButton buyButton">
+                    Learn More
+                </button>
+                <button class="blackBgButton buyButton">
+                    Buy
+                </button>
+            </div>
+            <img src="ipad_pro.jpg"/>
+        </div>
+
+
+
+        <!-- iPad Air -->
+        <div  class="divMainTwo" style="background-image: linear-gradient(rgb(147, 241, 241), white);background-color: rgb(147, 241, 241); color: black;  " >
+
+        <span style="font-size: 46px;">iPad Air</span>
+        <span style="font-size: 30px;text-align: center;">Two Sizes. Faster Chip. Does it all</span>
+        <div style="margin-top: 20px; margin-bottom: 30px;"> 
+            <button class="whiteBgButton buyButton">
+                Learn More
+            </button>
+            <button class="blackBgButton buyButton">
+                Buy
+            </button>
+        </div>
+        <img src="Ipad-air.png"/>
+        </div>
+
+
+
+    </div>
+
+    <!-- Carasoul -->
+    <div style="
+            display: flex;
+            flex-direction: column;">
+        <div style="
+                display: flex;
+                flex-direction: row;
+                overflow: scroll;
+                margin-top: 20px;">
+            <img style="margin-left: 10%;" src="Webpage/imgScroll1.jpg" alt="" class="carasoulImage">
+            <img src="Webpage/imgScroll2.jpg" alt="" class="carasoulImage">
+            <img src="Webpage/imgScroll3.jpg" alt="" class="carasoulImage">
+            <img style="margin-right: 10%;"  src="Webpage/imgScroll4.jpg" alt="" class="carasoulImage">
+        </div> 
+
+        
+        <div style="
+                display: flex;
+                flex-direction: row;
+                justify-content:center;
+                ">
+            <span class="scrollDots" style="background-color: black;"></span>
+            <span class="scrollDots"></span>
+            <span class="scrollDots"></span>
+            <span class="scrollDots"></span>
+        </div> 
+    </div>
+
+    <!-- Bottom Nav Bar -->
+    <div style="
+            background-color: rgb(239, 232, 232);
+            display: flex;
+            flex-direction: column;
+            padding: 5px 10px;
+
+            ">
+        <div style="display: block;">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas quisquam voluptatibus perferendis explicabo eveniet recusandae totam aliquid, laboriosam sunt unde consequuntur rem hic, voluptatum, eius inventore accusantium quo voluptates ab dolore. Iusto itaque sint deleniti illum molestias a praesentium odio fuga et dolor asperiores commodi delectus, mollitia reprehenderit repellat adipisci distinctio cum quae ab nulla maxime consectetur. Id necessitatibus beatae explicabo repellat ea nam nobis maiores error magnam magni. Expedita omnis tempore quam aliquam aperiam facilis nostrum explicabo nesciunt molestiae. Veritatis itaque nulla dicta debitis reiciendis, at quidem pariatur vero quo libero, ipsa, nostrum expedita labore vitae. Officiis voluptatem velit eius quaerat, consequuntur explicabo fugiat assumenda autem dicta dolorum. Eveniet odio possimus reprehenderit expedita ipsam. Et repellat facere quas quasi, optio commodi officiis incidunt odio nobis reprehenderit ad iure hic beatae ut, molestiae itaque culpa quaerat? Libero assumenda laboriosam vero animi consequuntur, magnam labore repudiandae nostrum optio, illo totam obcaecati numquam, et dolor ipsum ad fugiat nobis officia aliquid dicta blanditiis odio temporibus. Assumenda vitae, non labore, error pariatur excepturi distinctio voluptas ut soluta laudantium ea ex nihil quis beatae. Quaerat omnis, tenetur beatae soluta incidunt animi alias aperiam similique officiis dolore eaque nisi quis eius quisquam vitae laboriosam eligendi!
+        </div>
+
+
+
+        <hr style="color: black; width: 100%;">
+
+
+        <div style="display: flex;flex-direction: row; justify-content: space-evenly;text-align: center;">
+
+            <div style="
+                    display: flex;
+                    flex-direction: column;"
+                class="bottomLinksSubDiv">
+                <span class="LinksHeading">Shop and Learn</span>
+                <a href="#" class="bottomLinksLast">Store</a>
+                <a href="#" class="bottomLinksLast">Mac</a>
+                <a href="#" class="bottomLinksLast">iPod</a>
+                <a href="#" class="bottomLinksLast">iPad</a>
+                <a href="#" class="bottomLinksLast">iPhone</a>
+                <br>
+                <span class="LinksHeading">Apple Wallet</span>
+                <a href="#" class="bottomLinksLast">Wallet</a>
+            </div>
+
+            <div style="
+                    display: flex;
+                    flex-direction: column;"
+                class="bottomLinksSubDiv">
+                <span class="LinksHeading">Account</span>
+                <a href="#" class="bottomLinksLast">Manage Your Apple Id</a>
+                <a href="#" class="bottomLinksLast">icloud.com</a>
+                <br>
+                <span class="LinksHeading">Entertainment</span>
+                <a href="#" class="bottomLinksLast">Apple TV+</a>
+                <a href="#" class="bottomLinksLast">Apple One</a>
+            </div>
+
+            <div style="
+                    display: flex;
+                    flex-direction: column;"
+                class="bottomLinksSubDiv">
+                <span class="LinksHeading">Apple Store</span>
+                <a href="#" class="bottomLinksLast">Find a Store</a>
+                <a href="#" class="bottomLinksLast">Today at Store</a>
+                <br>
+                <span class="LinksHeading">For Business</span>
+                <a href="#" class="bottomLinksLast">Apple Business</a>
+            </div>
+
+            <div style="
+                    display: flex;
+                    flex-direction: column;"
+                class="bottomLinksSubDiv">
+                <span class="LinksHeading">For Education</span>
+                <a href="#" class="bottomLinksLast">Offer</a>
+                <a href="#" class="bottomLinksLast">College Id</a>
+                <br>
+            </div>
+
+
+
+        </div>
+
+        <hr style="color: black; width: 100%;">
+
+        <div>
+            More way to shop: <a href="#">Find an Apple Store</a> or Other Near you. Call : 1800 321 1982
+        </div>
+
+        <hr style="color: black; width: 100%;">
+
+        <div style="
+                display: flex; 
+                justify-content: space-between;
+                font-size: 18px;">
+
+            <span>
+                Copyright 2024 Apple Inc. All rights reserved
+            </span>
+            <div style="display: inline;">
+                <a href="#" class="bottomLinksLast">Privacy Policy</a> | 
+                <a href="#" class="bottomLinksLast">Site Policy</a> |
+                <a href="" class="bottomLinksLast">Legal</a> |
+                <a href="" class="bottomLinksLast">More</a>
+            </div>
+            <span>India</span>
+
+        </div>
+
+
+    </div>
+
+</body>
+</html>
